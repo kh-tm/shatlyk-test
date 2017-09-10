@@ -1,0 +1,173 @@
+.header-top {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: space-around;
+
+  width: 100%;
+  padding: 1% 2%;
+  min-height: 165px;
+}
+
+
+.header__name {
+  align-self: center;
+  flex: 3 3;
+
+  display: inline-block;
+  padding: 10px;
+  padding-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 110px;
+
+  text-shadow: rgba(0, 0, 0, 0.8) 1px 0px 2px;
+}
+.header__name h2 {
+  display: inline-block;
+
+  font-family: 'Comfortaa', cursive;
+  /*text-transform: uppercase;*/
+  font-size: 55px;
+  color: #FFAA00;
+}
+.header__name span {
+  display: inline-block;
+  font-size: 26px;
+
+  text-transform: uppercase;
+  color: #FFBF40;
+}
+.header__name__wrapper .cat {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 30px;
+  height: 260px;
+  width: 220px;
+  transition: width 0.3s, top 0.3s;
+  background: url("http://shannoncourtdogtraining.com/wp-content/uploads/revslider/hospital/slider-cat.png") no-repeat;
+  background-size: contain;
+}
+.header__address {
+  display: inline-block;
+  padding: 15px;
+  padding-right: 45px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5%;
+
+  color: #2A4480;
+  border: 3px #c2e5ff	double;
+  border-top-left-radius: 25px;
+}
+.header__address span {
+  font-weight: normal;
+  color: #2A4480;
+}
+
+
+.header__email {
+  display: inline-block;
+  padding: 15px;
+  padding-right: 55px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 1%;
+  font-weight: normal;
+
+  color: #2A4480;
+  border: 3px #c2e5ff	double;
+}
+
+.header__email-address {
+  color: inherit;
+  padding: 0 5px 1px 5px;
+}
+.header__email-address:hover {
+  padding-bottom: 0px;
+  border-bottom: 1px solid black;
+}
+
+
+.header__telephone {
+  display: inline-block;
+  padding: 15px;
+  padding-right: 55px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 1%;
+
+  font-weight: normal;
+  color: #2A4480;
+  border: 3px #c2e5ff	double;
+  border-bottom-right-radius: 25px;
+}
+.header__telephone__timetable {
+
+}
+.header__telephone .header__telephone__number {
+  float: right;
+  color: inherit;
+  padding: 0 5px 1px 5px;
+
+  text-decoration: none;
+}
+.header__telephone .header__telephone__number:hover {
+  padding-bottom: 0px;
+  border-bottom: 1px solid black;
+}
+
+@media (min-width: 1370px) and (max-width: 1550px)
+{
+  .header__name {
+    margin-left: 20px;
+  }
+  .header__name__wrapper .cat {
+    display: none;
+  }
+  .header__address {
+    margin-right: 0px;
+    border-right: none;
+  }
+  .header__email {
+    margin-right: 0px;
+    border-right: none;
+  }
+}
+@media (max-width: 1375px)
+{
+  .header__name__wrapper .cat {
+    display: none;
+  }
+  .header__address {
+    display: none;
+  }
+  .header__email {
+    display: none;
+  }
+  .header__telephone {
+    display: none;
+  }
+}
+
+.header-alt {
+  display: none;
+}
+@media (max-width: 1375px) {
+  .header-alt {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+@media (max-width: 865px) {
+  .header-alt {
+    margin: auto;
+  }
+  .header__name {
+    width: auto;
+    margin: auto;
+    text-align: center;
+  }
+
+}

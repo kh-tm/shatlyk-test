@@ -1,0 +1,32 @@
+.page-about__text {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.note__title {
+  display: block;
+  font-size: 52px;
+  font-weight: lighter;
+}
+.page-about__paragraph {
+  margin: 12px 0;
+  font-weight: normal;
+  font-size: 1em;
+}
+.page-about__paragraph--strong {
+  padding-left: 35px;
+  border-left: 6px solid rgb(254, 170, 72);
+  color: rgb(0, 0, 0);
+}
+.page-about__subtitle {
+  font-size: 1.8em;
+  font-weight: lighter;
+  margin: 25px 0 10px;
+  color: #c68fa1;
+}
+.page-about__paragraph--center {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 40px;
+  color: #c68fa1;
+}

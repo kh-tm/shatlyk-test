@@ -1,0 +1,39 @@
+.work-forms__text {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.work-forms__paragraph {
+  text-indent: 30px;
+  text-align: justify;
+  margin: 12px 0;
+  font-weight: normal;
+  font-size: 1em;
+  color: rgb(60, 60, 60);
+}
+.work-forms__paragraph b {
+  color: inherit;
+}
+/*.work-forms__paragraph:nth-of-type(2n+1) {
+  color: rgb(0, 109, 223);
+}
+.work-forms__paragraph:nth-of-type(2n) {
+  color: rgb(236, 141, 0);
+}*/
+.work-forms__paragraph--strong {
+  padding-left: 35px;
+  border-left: 6px solid rgb(254, 170, 72);
+  color: rgb(0, 0, 0);
+}
+.work-forms__subtitle {
+  font-size: 1.8em;
+  font-weight: lighter;
+  margin: 25px 0 10px;
+  color: #c68fa1;
+}
+.work-forms__paragraph--center {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 40px;
+  color: #c68fa1;
+}

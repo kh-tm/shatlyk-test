@@ -1,0 +1,90 @@
+span.staff-icon::before {
+  background-image: url(../images/man.png);
+}
+.medical-staff__specification {
+  display: block;
+  width: 100%;
+  padding: 0 10%;
+  text-align: center;
+}
+.medical-staff__profiles-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  overflow: hidden;
+
+  width: 80%;
+  max-width: 80%;
+  margin: 4vh 10% 0;
+}
+/*   СТРЕЛКИ (оверфлоу хидден мешает)
+  .medical-staff__profiles-wrapper::before {
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  left: -5%;
+  content: "";
+  height: 48px;
+  width: 48px;
+  border-top: 4px solid rgba(70, 70, 70, 0.5);
+  border-left: 4px solid rgba(70, 70, 70, 0.5);
+  transform: rotate(-45deg);
+  transition: border-color .3s;
+}
+.medical-staff__profiles-wrapper::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  right: -5%;
+  content: "";
+  height: 48px;
+  width: 48px;
+  border-top: 4px solid rgba(70, 70, 70, 0.5);
+  border-right: 4px solid rgba(70, 70, 70, 0.5);
+  transform: rotate(45deg);
+  transition: border-color .3s;
+}
+.medical-staff__profiles-wrapper:hover::after,
+.medical-staff__profiles-wrapper:hover::before {
+  border-color: rgb(240, 189, 36);
+  transition: border-color .3s;
+}*/
+.profiles-wrapper__person {
+  min-width: 25%;
+  max-width: 25%;
+  position: relative;
+}
+.person__photo img {
+  width: 85%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.person__full-name {
+  display: block;
+  font-size: 28px;
+  color: ;
+}
+.person__description {
+  font-size: 16px;
+}
+.person__description .characteristic {
+  font-size: 18px;
+  color: #FFAA00;
+  text-decoration: underline;
+}
+.profiles-wrapper__person::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: black;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+.profiles-wrapper__person:nth-child(4n)::after {
+  width: 0;
+}

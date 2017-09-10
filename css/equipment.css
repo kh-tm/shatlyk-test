@@ -1,0 +1,111 @@
+span.equipment-icon::before {
+  background-image: url(../images/med.png);
+}
+.equipment__content {
+  display: flex;
+  flex-direction: row;
+}
+.equipment__content input {
+  display: none;
+}
+.equipment__ul {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+
+  background-color: rgb(255, 220, 162);
+}
+.equipment__ul .equipment__li {
+  align-items: stretch;
+}
+.equipment__ul .equipment__li:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+}
+.equipment__ul .equipment__li span {
+  display: block;
+  margin: 0px 30px;
+  padding: 15px 0px;
+  border-top: 1px #ffffff	dashed;
+  color: inherit;
+}
+.equipment__ul .equipment__li:nth-child(1) span {
+  border-top: none;
+}
+.equipment__description {
+  flex-grow: 4;
+
+  position: relative;
+}
+.equipment__description-1,
+.equipment__description-2,
+.equipment__description-3,
+.equipment__description-4,
+.equipment__description-5,
+.equipment__description-6,
+.equipment__description-7 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.equipment__description-1 {
+  background:
+  linear-gradient(45deg, transparent 50%, rgba(186, 128, 0, 0.2) 50%, rgba(186, 128, 0, 0.2)),
+  linear-gradient(-45deg, rgba(186, 128, 0, 0.2) 50%, transparent 50%, transparent);
+}
+.equipment__description-2 {
+  background:
+  linear-gradient(45deg, transparent 50%, rgba(171, 0, 186, 0.2) 50%, rgba(171, 0, 186, 0.2)),
+  linear-gradient(-45deg, rgba(171, 0, 186, 0.2) 50%, transparent 50%, transparent);
+}
+.equipment__description-3 {
+  background:
+  linear-gradient(45deg, transparent 50%, rgba(186, 179, 0, 0.2) 50%, rgba(186, 179, 0, 0.2)),
+  linear-gradient(-45deg, rgba(186, 179, 0, 0.2) 50%, transparent 50%, transparent);
+}
+.equipment__description-4 {
+  background:
+  linear-gradient(45deg, transparent 50%, rgba(186, 0, 0, 0.2) 50%, rgba(186, 0, 0, 0.2)),
+  linear-gradient(-45deg, rgba(186, 0, 0, 0.2) 50%, transparent 50%, transparent);
+}
+.equipment__description-5 {
+  background:
+  linear-gradient(45deg, transparent 50%, rgba(0, 186, 181, 0.2) 50%, rgba(0, 186, 181, 0.2)),
+  linear-gradient(-45deg, rgba(0, 186, 181, 0.2) 50%, transparent 50%, transparent);
+}
+.equipment__description-6 {
+  background:
+  linear-gradient(45deg, transparent 50%, rgba(0,186,0,0.2) 50%, rgba(0,186,0,0.2)),
+  linear-gradient(-45deg, rgba(0,186,0,0.2) 50%, transparent 50%, transparent);
+}
+.equipment__description-7 {
+  background:
+  linear-gradient(45deg, transparent 50%, rgba(0, 186, 136, 0.2) 50%, rgba(0, 186, 136, 0.2)),
+  linear-gradient(-45deg, rgba(0, 186, 136, 0.2) 50%, transparent 50%, transparent);
+}
+
+#equipment-name-1:checked ~ .equipment__description > .equipment__description-1,
+#equipment-name-2:checked ~ .equipment__description > .equipment__description-2,
+#equipment-name-3:checked ~ .equipment__description > .equipment__description-3,
+#equipment-name-4:checked ~ .equipment__description > .equipment__description-4,
+#equipment-name-5:checked ~ .equipment__description > .equipment__description-5,
+#equipment-name-6:checked ~ .equipment__description > .equipment__description-6,
+#equipment-name-7:checked ~ .equipment__description > .equipment__description-7 {
+  display: block;
+}
+
+#equipment-name-1:checked ~ .equipment__ul > .equipment__li:nth-of-type(1),
+#equipment-name-2:checked ~ .equipment__ul > .equipment__li:nth-of-type(2),
+#equipment-name-3:checked ~ .equipment__ul > .equipment__li:nth-of-type(3),
+#equipment-name-4:checked ~ .equipment__ul > .equipment__li:nth-of-type(4),
+#equipment-name-5:checked ~ .equipment__ul > .equipment__li:nth-of-type(5),
+#equipment-name-6:checked ~ .equipment__ul > .equipment__li:nth-of-type(6),
+#equipment-name-7:checked ~ .equipment__ul > .equipment__li:nth-of-type(7) {
+  background: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 220, 162);
+}

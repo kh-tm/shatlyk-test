@@ -1,0 +1,75 @@
+span.photo-icon::before {
+  background-image: url(../images/camera.png);
+}
+.photo {
+  width: 100%;
+}
+.photo__wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.photo__wrapper__current-photo {
+  flex: 3;
+  margin-right: .3%;
+  height: 570px;
+
+  background-color: rgb(20, 155, 246);
+}
+.photo__all-photo {
+  height: 570px;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.photo__all-photo__item {
+  position: relative;
+  height: 110px;
+  margin-right: 4px;
+
+  opacity: 0.5;
+  transition: opacity .3s;
+  background-color: rgb(249, 134, 161);
+}
+.photo__all-photo__item:hover {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.photo__wrapper input {
+  display: none;
+}
+#photo-num1:checked ~ .photo__wrapper__current-photo {
+  background: rgba(221, 197, 61, 0.7);
+}
+#photo-num2:checked ~ .photo__wrapper__current-photo {
+  background: rgba(2, 82, 40, 0.68);
+}
+#photo-num3:checked ~ .photo__wrapper__current-photo {
+  background: rgba(185, 24, 162, 0.81);
+}
+#photo-num4:checked ~ .photo__wrapper__current-photo {
+  background: rgb(242, 216, 223);
+}
+#photo-num5:checked ~ .photo__wrapper__current-photo {
+  background: rgb(193, 194, 97);
+}
+#photo-num6:checked ~ .photo__wrapper__current-photo {
+  background: rgba(110, 86, 175, 0.9);
+}
+#photo-num7:checked ~ .photo__wrapper__current-photo {
+  background: rgb(101, 49, 78);
+}
+#photo-num8:checked ~ .photo__wrapper__current-photo {
+  background: rgb(238, 250, 212);
+}
+#photo-num9:checked ~ .photo__wrapper__current-photo {
+  background: rgba(231, 59, 59, 0.61);
+}
+#photo-num10:checked ~ .photo__wrapper__current-photo {
+  background: rgb(213, 161, 84);
+}

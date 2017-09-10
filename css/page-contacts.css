@@ -1,0 +1,23 @@
+.contacts {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.contacts__subtitle {
+  font-weight: lighter;
+  font-size: 1.7em;
+  margin-left: 30px;
+}
+.contacts__person {
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+.contacts__person:hover {
+  background-color: rgba(210, 210, 210, 0.2);
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 1px;
+}
+.contacts__person .number {
+  font-size: 1.2em;
+  float: right;
+}

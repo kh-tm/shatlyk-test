@@ -1,0 +1,55 @@
+.breadcrumbs {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+}
+.breadcrumbs::after {
+  content: "";
+  background-image: url(../images/sky.jpg);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.breadcrumbs__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  margin: auto;
+}
+.breadcrumbs__item {
+  position: relative;
+  padding: 5px 20px;
+  margin: 0 15px;
+
+  background-color: rgb(255, 255, 255);
+}
+.breadcrumbs__item::before {
+  content: "";
+  border-top: 20px solid rgb(255, 255, 255);
+  border-bottom: 20px solid rgb(255, 255, 255);
+  border-right: 20px solid rgb(255, 255, 255);
+  border-left: 20px solid transparent;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.breadcrumbs__item::after {
+  content: "";
+  border-top: 20px solid transparent;
+  border-left: 20px solid rgb(255, 255, 255);
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+.breadcrumbs__item__link {
+  color: #2A4480;
+}
